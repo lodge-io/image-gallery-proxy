@@ -1,0 +1,19 @@
+## MAC files ##
+.DS_Store
+
+## NPM ##
+npm
+npm-debug.log
+node_modules/
+
+pids
+*.pid
+logs
+*.log
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Compiled Dirs (http://nodejs.org/api/addons.html
+dist/
+
