@@ -11,14 +11,14 @@ const app = express();
 
 // const apiProxy = httpProxy.createProxyServer();
 const port = 8001;
-app.use(express.static('dist'));
+app.use('/', express.static('dist'));
 // http://localhost:8000/rooms/:id
-app.get('http://localhost:8000', (req, res) => {
-  apiProxy.web(req, res, { target: 'http://localhost:8000/ });
-});
+// app.get('http://localhost:8000', (req, res) => {
+//   proxy.web(req, res, { target: 'http://localhost:8000/ });
+// });
 
 // app.all('/', (req, res) => {
-//   proxy.web(req, res, { target: 'http://localhost:8000' });
+//   proxy.web(req, res, { target: 'http://localhost:8000/?1' });
 // });
 
 // app.use('/rooms/:id/photos', proxy({target: 'http://54.175.98.175/'}));
